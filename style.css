@@ -175,7 +175,7 @@ section.skills div.skills-line div.skills-box ul {
 
 
 
-/* Experiência Acadêmica*/
+/* Experiencia Academica*/
 
 section.academic {
     background-color: #000022;
@@ -372,6 +372,21 @@ section.footer div.rodape {
 
 }
 
+@media (min-width: 385px){
+
+ .title-div{
+    display: inline-block;
+    text-align: center;
+
+ }
+
+    section.title img.profile{
+        width: 200px;
+    }
+
+}
+
+
 @media (min-width: 700px) {
 
     .todo {
@@ -449,6 +464,7 @@ section.footer div.rodape {
     .section-title {
         font-size: 32px;
     }
+ 
 
     /*Menu*/
 
@@ -496,6 +512,7 @@ section.footer div.rodape {
 
     section.about {
         padding: 12px 60px 30px 60px;
+        margin-left: 70px;
     }
 
     div.about-container {
