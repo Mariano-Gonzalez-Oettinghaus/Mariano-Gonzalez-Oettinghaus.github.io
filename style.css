@@ -28,7 +28,7 @@ a {
 }
 a:hover{
     background-color: #E3EBFF;
-    font-weight: ;
+    font-weight: bold;
 
 }
 
@@ -132,7 +132,7 @@ section.title img.profile {
 
 
 section.about {
-    background-color: ;
+    background-color: #000022;
 }
 
 
@@ -409,7 +409,7 @@ section.footer div.rodape {
         width: 524px;
 
     }
-
+  
     section.title img.profile {
         width: 157px;
         margin-left: 32px;
@@ -487,7 +487,7 @@ section.footer div.rodape {
 
     div.title-container {
         width: 751px;
-
+        
     }
 
     section.title img.profile {
@@ -497,7 +497,7 @@ section.footer div.rodape {
 
     section.title div.title-div div.title-container ul {
         display: flex;
-        margin-left: -65px;
+        margin-left: 60px;
         align-items: center;
         padding: 0px;
         font-size: 16px;
@@ -512,7 +512,7 @@ section.footer div.rodape {
 
     section.about {
         padding: 12px 60px 30px 60px;
-        margin-left: 70px;
+        margin-left: 5%;
     }
 
     div.about-container {
@@ -627,6 +627,8 @@ section.footer div.rodape {
         height: 255px;
     }
 
+ 
+
     section.skills div.skills-line {
         justify-content: center;
     }
@@ -637,15 +639,6 @@ section.footer div.rodape {
         height: 118px;
     }
 
-    section.hobbies-section div.hobbies-line {
-        justify-content: center;
-    }
-
-    section.hobbies-section div.hobbies-line div.hobbies-box {
-        margin: 22px 15px 22px 0px;
-        width: 156px;
-        height: 118px;
-    }
 
     section.formcontato {
         padding: 64px 172px;
