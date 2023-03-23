@@ -23,4 +23,3 @@ function validarDatos(){
     }
    
 }
-    document.querySelector('form').addEventListener('submit',validarDatos)
