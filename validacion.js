@@ -23,3 +23,10 @@ function validarDatos(){
     }
    
 }
+
+
+const getDayNumber = (janFirstDayNumber, yearDayNumber) => {
+    let day = ((janFirstDayNumber + yearDayNumber - 1) % 7);
+    day = (day === 0) ? "domingo" : (day === 1) ? "Lunes" : (day === 2) ? "Martes" : (day === 3) ? "Miércoles" : (day === 4) ? "Jueves" : (day === 5) ? "Viernes" : "Sabado";
+    return day
+}
