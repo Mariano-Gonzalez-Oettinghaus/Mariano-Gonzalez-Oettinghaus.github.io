@@ -207,9 +207,15 @@ margin: 10px 0;
   
   .badge {
    margin-left: .4rem;
+  
   }
   .badge-generation{
     margin-top: .1rem;
+  }
+
+  .bg{
+  background-color:  #0b149b;
+
   }
 #generation-encabezado{
     margin-top: 3rem;
@@ -272,6 +278,7 @@ margin: 10px 0;
     margin: 10px;
   }
 
-  .btn.info{
-    background-color: #001242;
+  
+  .btn-primary{
+    background-color: #001242 !important;
   }
