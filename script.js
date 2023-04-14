@@ -1,5 +1,7 @@
 
 
+//sin terminar
+
 // ============ SCRIPT LIBRERIA TYPED.JS ==========
 const typed = new Typed('#typed', {
     strings: ['Desarrollador Front-End', 'Estudiante de Ing. Sistemas'],

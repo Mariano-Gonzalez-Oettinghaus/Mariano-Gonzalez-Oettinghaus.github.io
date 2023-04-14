@@ -1,3 +1,6 @@
+
+//sin terminar formulario en progreso
+
 function validarDatos(){
     window.event.preventDefault()
      
