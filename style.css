@@ -12,6 +12,11 @@
     z-index: 3;
 }
 
+p {
+margin-bottom: 1px !important;
+;
+padding: 0px;
+}
 
 /* Aqui se ajusta Flex de barra de Navegacion */
 .navbar-collapse{
@@ -206,11 +211,7 @@ margin: 10px 0;
     font-size: 20px;
     font-weight: bold;
   }
-  
-  .badge {
-   margin-left: .4rem;
-  
-  }
+
   .badge-generation{
     margin-top: .1rem;
   }
