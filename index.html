@@ -1,282 +1,392 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portafolio de desarollo web de Mariano Gonzalez Oettinghaus">
-    <meta name="keywords" content="HTML. CSS, JavaScript, Bootstrap, Java, Spring boot">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portafolio</title>
-    <!--CSS-->
-    <link rel="stylesheet" href="./style.css">
-    <!--Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quantico:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Portafolio3.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/6361/6361498.png" type="imagen/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
-
 <body>
-    <!-- Barra de Navegacion -->
-    <nav class="navbar navbar-expand-md navbar-dark">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbar-toggler">
-            <a class="navbar-brand" href="#">Mariano Gonzalez Oettinghaus</a>
-            
-            <ul class="navbar-nav d-flex justify-content-center align-items-center">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Sobre mí</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Proyectos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Formacion</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
-              </li>
-            </ul>
-            </form>
-          </div>
-        </div>
-      </nav>
-
-  
-   <!--Seccion principal-->
-   <section class="hero align-items-stretch">
-    <!-- Particulas -->
-    <div class="principal d-flex flex-column justify-content-space-between align-items-center">
-      <div class="bubbles">
-        <span style="--i: 11"></span>
-        <span style="--i: 12"></span>
-        <span style="--i: 24"></span>
-        <span style="--i: 10"></span>
-        <span style="--i: 14"></span>
-        <span style="--i: 23"></span>
-        <span style="--i: 18"></span>
-        <span style="--i: 16"></span>
-        <span style="--i: 19"></span>
-        <span style="--i: 20"></span>
-        <span style="--i: 22"></span>
-        <span style="--i: 25"></span>
-        <span style="--i: 18"></span>
-        <span style="--i: 21"></span>
-        <span style="--i: 15"></span>
-        <span style="--i: 13"></span>
-        <span style="--i: 26"></span>
-        <span style="--i: 17"></span>
-        <span style="--i: 18 "></span>
-        <span style="--i: 16 "></span>
-        <span style="--i: 19 "></span>
-        <span style="--i: 18 "></span>
-      
-  
-      </div> 
-    <img class="imagen-perfil"src="./imagenes/perfil.png"  alt="Foto de Mariano">
-     <h1>Hola, soy Mariano Gonzalez Oettinghaus</h1>
-     <h2> Desarrollador Java Full stack</h2>
-   </div>
- </section>
-     
+    <!-- Este es el menu de encabezado y barra de navegación de mi portafolio-->   
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Mariano</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="Seleccionar()">Inicio</a></li>
+                    <li><a href="#sobremi" onclick="Seleccionar()">Sobre mí</a></li>
+                    <li><a href="#curriculum" onclick="Seleccionar()">Curriculum</a></li>
+                    <li><a href="#proyectos" onclick="Seleccionar()">Proyectos</a></li>
+                    <li><a href="#contacto" onclick="Seleccionar()">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-duotone fa-bars"></i>
+            </div>           
+        </header>
     </div>
-    <div class="principal-inferior">
-      <!--Poner alguna imagen-->
-      
-    </div>
-   </section>
-
-   <!--Sobre mi-->
-   <section class="sobre-mi seccion-oscura">
-<div class="contenedor">
-  <h2 class="seccion-titulo texto-blanco"> Sobre mi</h2>
-    <p class="seccion-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt consectetur beatae reprehenderit commodi quidem, eligendi sapiente qui nostrum rerum numquam nam ducimus eos quo cumque accusantium id quasi ipsam corporis.
-    Ducimus sed nisi deserunt ipsum quaerat culpa? Nemo deserunt eius, corrupti accusantium velit recusandae esse sunt excepturi libero vero atque quo alias laboriosam odit nam sapiente ipsum nisi quam autem.
-    </p> 
     
-</div>
+    <!-- Esta es la sección de inicio de mi portafolio -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img id="Foto-perfil" src="./imagenes/perfil.png" alt="Foto de perfil" width="">
+            </div>
+            <h1>Mariano Gonzalez Oettinghaus</h1>
+            <h2>Ingeniero en Sistemas computacionales<br> Programador web FullStack. <h2>
+            <div class="redes">
+            <a href="https://www.facebook.com/oettinghausmgo"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/mariano-gonzalez-oettinghaus/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Mariano-Gonzalez-Oettinghaus" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/marianogo14/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+           
+            </div>
+        </div>
+    </section>
 
-   </section>
+    <!--Esta es la sección sobre mí-->
+    <section id="sobremi" class="sobremi row">
+        <div class="contenido-seccion">
+            <h2>Sobre mí</h2>
+            <p><span>Hola, soy Mariano Gonzalez Oettinghaus</span> una persona apasionada por la tecnología, con gran gusto por el
+                diseño e implementación de paginas web y aplicaciones utilizando lenguajes como Java,
+                JavaScript, HTML, CSS y manejo de bases de datos relacionales con Msyql.
+                Cuento con experiencia trabajando conforme a metas o sobre proyecto utilizando la metodología SCRUM, también utilizando herramientas como GitHub para el
+                control de versiones mostrando siempre alta responsabilidad y
+                dedicación al buen manejo del código.
+                </p>
+                
+            <div class="fila">
+                <!--Se agregan los datos personales-->
+                <div class="col">
+                    <h3>Datos personales</h3>
+                    <ul>
+                    
+                   
+                        <li>
+                            <strong>Correo</strong>
+                            oettinghaus@gmail.com
+                        </li>
+                        <li>
+                            <strong>Linkedin</strong>
+                            <a href="https://www.linkedin.com/in/mariano-gonzalez-oettinghaus/" target="_blank">Mariano Gonzalez Oettinghaus </a>
+                        </li>
+                        <li>
+                            <strong>Ubicación</strong>
+                            Celaya, Guanajuato, México
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            Desarrollador Web FullStack.
+                        </li>
+                    </ul>
+                </div>
 
-   <!--Formacion-->
-<section class="formacion seccion-clara">
+                <!-- Se agregan los intereses -->
+                <div class="col">
+                    <h3>Tecnologías</h3>
+                    <div class="contenedor-intereses">
+                        <div class="intereses">
+                            <img src="./imagenes/732212.png" width="60px" alt="" class="imgicon">
+                            <span>HTML</span>
+                        </div>
+                        <div class="intereses">
+                          <img src="./imagenes/css-3.png" width="60px" alt="" class="imgicon">
+                          <span>CSS</span> 
+                        </div>
+                        <div class="intereses">
+                          <img src="./imagenes/js_5968292(1).png" width="60px" alt="" class="imgicon">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="intereses">
+                          <img src="./imagenes/Bootstrap_logo.svg.png" width="60px alt="" class="imgicon">
+                          <span>Bootstrap</span>
+                        </div>
+                        <div class="intereses">
+                          <img src="./imagenes/mysql.png" width="60px" alt="" class="imgicon">
+                          <span>MySQL</span>
+                        </div>
+                        <div class="intereses">
+                          <img src="./imagenes/java.png" width="60px" alt="" class="imgicon">
+                          <span>Java</span>
+                        </div>
+                        <div class="intereses">
+                          <img src="./imagenes/icons8-spring-boot-480.png" width="60px" alt="" class="imgicon">
+                          <span>Spring Boot</span>
+                        </div>
+                        <div class="intereses">
+                          <img src="./imagenes/" width="60px" alt="" class="imgicon">
+                            <span>Git</span>
+                        </div>
 
-  <h2 id="formacion">Formación académica</h2>
-<div class="container text-center">
-<div class="row">
-  <!--Universidad de Harvard-->
+                    </div>
+                </div>
+            </div>
+            <a id="downloadCV" href="./CV/Curriculum MGO.pdf" target="_blank">
+              <button  type="button" class="btn btn-primary"> Currículum Vitae <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span></button>
+              
+            </a>
+        </div>
+    </section>
 
-  <div class="columna col-12 col-md-12 col-lg-4">
-    <img class="imgf" src="./imagenes/harvard(1).png" alt="">
-  <p>CS50 Introduction to Computer Science</p>
-  <div class="badge">
-      <span class="badge bg"> Scratch</span>
-      <span class="badge bg"> C#</span>
-      <span class="badge bg">HTML</span>
-      <span class="badge bg">CSS</span>
-      <span class="badge bg">JavaScript</span>
+    <!--ESTA ES LA SECCIÓN DE CURRICULUM-->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Desarrollo de Software</h4>
+                        <span class="casa">Universidad IEU</span>
+                        <span class="fecha">2022-2025</span>
+                        <p>Actuales estudios donde me encuentro aprendiendo acerca de programación, además de distintas áreas como son el manejo de empresas de software, gestión de proyectos de software, requerimientos de software, análisis y diseño de sistemas y software libre, es mi acercamiento actual con el aprendizaje del mundo de la tecnología para seguirme adecuando a lo necesario y poder estudiar una maestría al terminar mis estudios.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Desarrollador Java Full Stack</h4>
+                        <span class="casa">Generation México</span>
+                        <span class="fecha">2023-2023</span>
+                        <p>Este es un bootcamp diseñado para ayudar a jóvenes a encontrar empleo, mediante el aprendizaje de lenguajes de programación saliendo como Java FullStack Developers Jr. 
+                        Además de la enseñanza de distintos temas como Java, HTML, CSS, JavaScript, Git, Metodología SCRUM, MySQL, Spring y React, en este bootcamp se miraban las diferentes necesidades de las empresas en cuanto a habilidades blandas entre otro tipo de cuestiones para poder lograr insertarnos en el mundo laboral de la mejor manera posible. <br><br> </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Mecatrónica Automatización </h4>
+                        <span class="casa">Universidad UTS</span>
+                        <span class="fecha">2019-2021</span>
+                        <p>Estudié en la Universidad Tecnológica del Sur de Sonora en el periodo de 2019 a 2021 desertando por haberme mudado de casa a otro estado, pero con aprendizajes muy importantes que a día de hoy sigo recordando como son la programación de arduinos, mi inicio con la tecnología y el mundo de la programación con el aprendizaje en lógica de programación y el acercamiento a bases de datos, eso fue lo que me hizo llegar a lo que he logrado hoy. <br><br> </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col derecha">
+                    <h3>Experiencia Laboral</h3>
+                    <div class="item der">
+                        <h4>Desarrollador FrontEnd</h4>
+                        <span class="casa">Freelancer</span>
+                        <span class="fecha">2023-2023</span>
+                        <p>Iniciación con el trabajo como Freelancer para la realización de una página con un cliente que desea rentar departamentos de forma virtual, así como darlos a conocer desde su página para poder tener un mayor alcance y captar la atención de los clientes, actualmente me encuentro trabajando con este proyecto. <br><br><br> </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Desarrollador FullStack</h4>
+                        <span class="casa">Generation México</span>
+                        <span class="fecha">2023-2023</span>
+                        <p>Realización de una página web E-commerce para un restaurante llamado Burguer's House con un equipo de trabajo de 9 integrantes en total incluyéndome, donde se utilizaron los lenguajes JavaScript, HTML y CSS para la realización de la parte FrontEnd, además de las herramientas Bootstrap como framework, la utilización de GitHub como nuestra herramienta controladora de versiones y como la forma de trabajar en equipo, además de utilizar SCRUM para la organización y la forma de trabajo de todos los integrantes, utilizando Java, Springboot y MySQL para la parte BackEnd y base de datos.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Encargado de tienda</h4>
+                        <span class="casa">Tiendas OXXO</span>
+                        <span class="fecha">2020-2022</span>
+                        <p>Cargo que realicé por un año y medio como encargado de tienda, donde me enfocaba en realizar inventarios, acomodo de almacen, control de almacen, apoyo al equipo de trabajo, atención a cliente, teniendo un segundo acercamiento en el ámbito laboral sobre entender el pensar del cliente y con el manejo de equipos de trabajo dado que tenía las responsabilidades de manejar horarios, apoyar al equipo de trabajo y estar al pendiente para situaciones de apoyo en la tienda.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--ESTA ES LA SECCIÓN DEL PORTAFOLIO-->
+    <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+        <h2 class="seccion-titulo texto-negro">Mis proyectos </h2>
       
+        <!-- Galeria de Proyectos -->
+        <div class="container text-center proyectos-contenedor">
+          <div class="row">
+            <!-- Proyecto 1 -->
+            <div class="columna col-12 col-md-6 col-lg-4">
+              <div class="proyecto">
+                <img src="/imagenes/Pc con celular programando.jpg" alt="Proyecto 1">
+                <div class="overlay">
+                  <p>Proyecto 1</p>
+                  <div class="iconos-contenedor">
+                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                      <i class="bi bi-github"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      <i class="bi bi-laptop"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Proyecto 2 -->
+            <div class="columna col-12 col-md-6 col-lg-4">
+              <div class="proyecto">
+                <img src="/imagenes/Pc con celular programando.jpg" alt="Proyecto 1">
+                <div class="overlay">
+                  <p>Proyecto 2</p>
+                  <div class="iconos-contenedor">
+                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                      <i class="bi bi-github"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      <i class="bi bi-laptop"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Proyecto 3 -->
+            <div class="columna col-12 col-md-6 col-lg-4">
+              <div class="proyecto">
+                <img src="/imagenes/Pc con celular programando.jpg" alt="Proyecto 1">
+                <div class="overlay">
+                  <p>Proyecto 3</p>
+                  <div class="iconos-contenedor">
+                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                      <i class="bi bi-github"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      <i class="bi bi-laptop"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Proyecto 4 -->
+            <div class="columna col-12 col-md-6 col-lg-4">
+              <div class="proyecto">
+                <img src="/imagenes/Pc con celular programando.jpg" alt="Proyecto 1">
+                <div class="overlay">
+                  <p>Proyecto 4</p>
+                  <div class="iconos-contenedor">
+                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                      <i class="bi bi-github"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      <i class="bi bi-laptop"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Proyecto 5 -->
+            <div class="columna col-12 col-md-6 col-lg-4">
+              <div class="proyecto">
+                <img src="/imagenes/Pc con celular programando.jpg" alt="Proyecto 1">
+                <div class="overlay">
+                  <p>Proyecto 5</p>
+                  <div class="iconos-contenedor">
+                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                      <i class="bi bi-github"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      <i class="bi bi-laptop"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Proyecto 6 -->
+            <div class="columna col-12 col-md-6 col-lg-4">
+              <div class="proyecto">
+                <img src="/imagenes/Pc con celular programando.jpg" alt="Proyecto 1">
+                <div class="overlay">
+                  <p>Proyecto 6</p>
+                  <div class="iconos-contenedor">
+                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                      <i class="bi bi-github"></i>
+                    </a>
+                    <a href="https://www.freecodecamp.org/espanol/" target="_blank" rel="noopener noreferrer">
+                      <i class="bi bi-laptop"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="boton">
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+          <button  type="button" class="btn btn-primary"> Ver más proyectos</button>
+          
+        </a>
     </div>
-    </div>
-  
-  
- <!--Oracle-->
- <div class="columna col-12 col-md-12 col-lg-4">
-  
-  <img class="imgo" src="./imagenes/oracle Blanco.png" alt="">
-  <p>Desarrollador FrontEnd</p>
-  <div class="badge">
-    <span class="badge bg"> HTML</span>
-    <span class="badge bg"> CSS</span>
-    <span class="badge bg">Git</span>
-    <span class="badge bg">JavaScript</span>
-    <span class="badge bg">React</span>
-    
-  </div>
-</div>
-<!--Generation Mexico-->
-<div class="columna col-12 col-md-12 col-lg-4">
-  <p></p>
-  <img class="imgg" src="./imagenes/Generation mex.png" alt="">
-  <p id="generation-encabezado">Desarrollador Java Fullstack</p>
-  <div class="badge badge-generation">
-    <span class="badge bg"> HTML</span>
-    <span class="badge bg"> CSS</span>
-    <span class="badge bg">Git</span>
-    <span class="badge bg">JavaScript</span>
-    <span class="badge bg">Java</span>
-    <span class="badge bg">Mysql</span>
-  
-</div>
-
-</section>
-
- <!-- Proyectos -->
- <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
-  <h2 class="seccion-titulo texto-negro">Mis proyectos </h2>
-
-  <!-- Galeria de Proyectos -->
-  <div class="container text-center proyectos-contenedor">
-    <div class="row">
-      <!-- Proyecto 1 -->
-      <div class="columna col-12 col-md-6 col-lg-4">
-        <div class="proyecto">
-          <img src="./imagenes/oracle Blanco.png" alt="Proyecto 1">
-          <div class="overlay">
-            <p>Proyecto 1</p>
-            <div class="iconos-contenedor">
-              <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-github"></i>
-              </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-laptop"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Proyecto 2 -->
-      <div class="columna col-12 col-md-6 col-lg-4">
-        <div class="proyecto">
-          <img src="./imagenes/oracle Blanco.png" alt="Proyecto 1">
-          <div class="overlay">
-            <p>Proyecto 2</p>
-            <div class="iconos-contenedor">
-              <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-github"></i>
-              </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-laptop"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Proyecto 3 -->
-      <div class="columna col-12 col-md-6 col-lg-4">
-        <div class="proyecto">
-          <img src="./imagenes/oracle Blanco.png" alt="Proyecto 1">
-          <div class="overlay">
-            <p>Proyecto 3</p>
-            <div class="iconos-contenedor">
-              <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-github"></i>
-              </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-laptop"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Proyecto 4 -->
-      <div class="columna col-12 col-md-6 col-lg-4">
-        <div class="proyecto">
-          <img src="./imagenes/oracle Blanco.png" alt="Proyecto 1">
-          <div class="overlay">
-            <p>Proyecto 4</p>
-            <div class="iconos-contenedor">
-              <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-github"></i>
-              </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-laptop"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Proyecto 5 -->
-      <div class="columna col-12 col-md-6 col-lg-4">
-        <div class="proyecto">
-          <img src="./imagenes/oracle Blanco.png" alt="Proyecto 1">
-          <div class="overlay">
-            <p>Proyecto 5</p>
-            <div class="iconos-contenedor">
-              <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-github"></i>
-              </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-laptop"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Proyecto 6 -->
-      <div class="columna col-12 col-md-6 col-lg-4">
-        <div class="proyecto">
-          <img src="./imagenes/oracle Blanco.png" alt="Proyecto 1">
-          <div class="overlay">
-            <p>Proyecto 6</p>
-            <div class="iconos-contenedor">
-              <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-github"></i>
-              </a>
-              <a href="https://www.freecodecamp.org/espanol/" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-laptop"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-    <button  type="button" class="btn btn-primary"> Ver más proyectos</button>
-    
-  </a>
-</section>
+      </section>
 
 
-  
-    <script src="script.js" type="module"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!--ESTA ES LA SECCIÓN DE CONTACTO-->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <p id="alertValidacionesTexto"></p>
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!--FORUMULARIO-->
+                <div class="col">
+                    <form action="https://formsubmit.co/6e1c47ab51c173ac022a386085b8ffc8" method="POST">
+                    <input id="name" type="text" name="name" placeholder="Tu nombre" required="">
+                    <input id="phone" type="number" name="phone" placeholder="Número telefónico" required="">
+                    <input id="Email" type="email" name="email" placeholder="Dirección de correo" required="">
+                    <input id="subject" type="text" name="subject" placeholder="Tema" required="">
+                    <textarea id="message" name="message" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button id="sendMessage" type="submit">
+                        Enviar mensaje <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+
+                    <input type="hidden" name="_next" value="https://sorckmx.github.io/#contacto">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+                </div>
+                
+                <!--MAPA-->
+                <div class="col">
+                    <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59783.25279306782!2d-100.85735606242068!3d20.528625867343205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842cba641e60c675%3A0x998fd3ad9a7d2747!2sCelaya%2C%20Gto.!5e0!3m2!1ses!2smx!4v1692402940368!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Ciudad de Celaya, Guanajuato.
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: oettinghaus@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--ESTA ES LA SECCIÓN DE FOOTER-->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/oettinghausmgo"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/mariano-gonzalez-oettinghaus/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Mariano-Gonzalez-Oettinghaus" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/marianogo14/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="/Portafolio3.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </body>
 </html>
-
