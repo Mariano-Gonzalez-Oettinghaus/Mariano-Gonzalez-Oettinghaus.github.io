@@ -546,7 +546,7 @@ p {
     }
     .contacto .col .info{
         position: absolute ;
-        background-color: #252A2E;
+        background-color: #000022;
         padding: 20px;
         max-width: 300px;
         left: 50%;
@@ -560,7 +560,7 @@ p {
         margin-bottom: 20px;
     }
     .contacto .col .info ul li i{
-        color: #001242d4;
+        color: #2ba9d3;
         display: inline-block;
         margin-right: 20px;
 
