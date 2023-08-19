@@ -52,12 +52,12 @@ html {
 }
 
 .contenedor-header header nav ul li a:hover {
-    text-shadow: 2px 2px 2pxp 2px;
+    text-shadow: 2px 2px 2px 2px;
 }
 
 .nav-responsive {
     background-color: #2ba9d3;
-    color: bisque;
+    color: #000022;
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
