@@ -244,6 +244,8 @@ html {
 #downloadCV {
     color: whitesmoke;
     text-decoration: none;
+    display: flex;
+    justify-content: center;
 }
 
 #downloadCV:visited {
