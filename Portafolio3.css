@@ -246,6 +246,7 @@ html {
     text-decoration: none;
     display: flex;
     justify-content: center;
+    margin-top: 3rem;
 }
 
 #downloadCV:visited {
@@ -450,7 +451,7 @@ p {
     
       
       .btn-primary{
-        background-color: #001242 !important;
+        background-color: #001242 !important ;
         
       }
       
