@@ -118,6 +118,7 @@ html {
     margin: 40px 5px;
     font-size: 20px;
     transition: 1s;
+    overflow: hidden;
 }
 
 .inicio .contenido-banner .redes a:hover {
@@ -489,9 +490,11 @@ p {
         background-color: #01103a;
         color: #fff;
         padding: 50px 0;
+        overflow: hidden;
     }
 
     .contacto .mapa {
+        overflow: hidden;
         width: 500px;
         height: 505px;
         margin: 2px solid #252525;
@@ -689,4 +692,5 @@ p {
         transition: all 0.2s ease;
         
       }
+
     }
