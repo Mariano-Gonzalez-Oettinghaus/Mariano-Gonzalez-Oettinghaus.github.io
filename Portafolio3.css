@@ -4,7 +4,7 @@
     font-family: 'work sans';
     margin: 0;
     padding: 0;
-    
+    overflow-x:hidden;
 }
 
 html {
@@ -68,7 +68,7 @@ html {
 
     /* Sección de Inicio*/
 .inicio {
-    overflow: hidden;
+    overflow-x:visible;
     margin-top: 4.5rem;
     background: linear-gradient(to top, #000022b4, #001242d4), url(./imagenes/Línea\ de\ código.jpg);
     background-size: cover;
@@ -86,6 +86,7 @@ html {
     margin: auto;
     text-align: center;
     border-radius: 40px;
+    overflow-x:visible;
 }
 
 .inicio .contenido-banner img {
@@ -94,6 +95,7 @@ html {
     width: 100%;
     margin: auto;
     border-radius: 100%;
+    overflow-x:visible;
 }
 
 .inicio .contenido-banner h1 {
@@ -119,7 +121,7 @@ html {
     margin: 40px 5px;
     font-size: 20px;
     transition: 1s;
-    overflow: hidden;
+    overflow-x:visible;
 }
 
 .inicio .contenido-banner .redes a:hover {
