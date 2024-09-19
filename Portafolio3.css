@@ -5,6 +5,9 @@
     margin: 0;
     padding: 0;
 }
+body {
+    overflow-x: hidden;
+}
 
 html {
     /*Posibilidad de deslizar cuando se haga click en los links del menú */
@@ -394,7 +397,7 @@ p {
     }
 
     .proyectos-recientes {
-        padding: 40px;
+        padding: 20px;
       }
       
       .proyectos-recientes img {
