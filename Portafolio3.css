@@ -529,6 +529,16 @@ p {
         color: #ffffff;
         font-size: 18px;
     }
+    .contacto input, .contacto textarea {
+        display: block;
+        width: 100%;
+        padding: 18px;
+        border: none;
+        margin-bottom: 20px;
+        background-color: #000022;
+        color: #ffffff;
+        font-size: 18px;
+    }
     .contacto button{
         cursor: pointer;
         background-color: transparent;
