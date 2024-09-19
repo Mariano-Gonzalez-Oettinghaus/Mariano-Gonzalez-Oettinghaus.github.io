@@ -15,7 +15,7 @@ html {
 
     /* Menú */
 .contenedor-header {
-    overflow-x: visible;
+    overflow: visible;
     background: #000022;
     position: fixed;
     width: 100%;
@@ -204,7 +204,7 @@ html {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .sobremi .fila .col .contenedor-intereses .intereses {
