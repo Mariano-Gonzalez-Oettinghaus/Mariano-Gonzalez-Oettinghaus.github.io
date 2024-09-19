@@ -68,6 +68,7 @@ html {
 
     /* Sección de Inicio*/
 .inicio {
+    overflow: hidden;
     margin-top: 4.5rem;
     background: linear-gradient(to top, #000022b4, #001242d4), url(./imagenes/Línea\ de\ código.jpg);
     background-size: cover;
@@ -267,6 +268,7 @@ p {
 
     /*SECCIÓN DE CURRICULUM*/
     .curriculum {
+        overflow: hidden;
         background-color: #01103a;
         color: whitesmoke;
         padding: 50px 20px;
@@ -394,6 +396,7 @@ p {
 
     #proyectos{
         background-color: #000022;
+        overflow: hidden;
     }
 
     .proyectos-recientes {
@@ -486,6 +489,7 @@ p {
     
     /*SECCION DE CONTACTO*/
     .contacto{
+        overflow: hidden;
         src: url("https://www.google.com/maps/d/u/0/embed?mid=11XAh-2mLgkE9cfMPyC5NxGMtBxqLBjA&ehbc=2E312F" );
         background-color: #01103a;
         color: #fff;
