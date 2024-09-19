@@ -398,8 +398,8 @@ p {
       }
       
       .proyectos-recientes img {
-        height: 100%;
-        width: 100%;
+        height: 16rem;
+        width: 25rem;
         padding: 10px;
         border-radius: 10px;
         display: block;
@@ -422,7 +422,7 @@ p {
       }
       
       .overlay p {
-        font-size: 25px;
+        font-size: 20px;
         font-weight: bold;
         margin-bottom: 0;
       }
