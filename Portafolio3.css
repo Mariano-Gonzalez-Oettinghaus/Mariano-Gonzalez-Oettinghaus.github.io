@@ -5,9 +5,7 @@
     margin: 0;
     padding: 0;
 }
-body {
-    overflow-x: hidden;
-}
+
 
 html {
     /*Posibilidad de deslizar cuando se haga click en los links del menú */
@@ -643,8 +641,10 @@ p {
     }
 
     @media screen and (max-width:700px) {
+        
         .sobremi .fila {
             display: block;
+            overflow-x: hidden;
         }
         .sobremi .fila .col {
             width: fit-content;
@@ -673,8 +673,10 @@ p {
         .portafolio .galeria {
             display: block;
             width: 100%;
+            overflow-x: hidden;
         }
         .portafolio .galeria .proyecto {
+            overflow-x: hidden;
             max-width: 100%;
         }
         .portafolio .galeria .proyecto img {
@@ -687,6 +689,26 @@ p {
         .contacto .fila .col {
             width: 100%;
         }
+        @media screen and (max-width: 700px) {
+            .contenedor-header header {
+                padding: 15px 10px;
+            }
+        }
 
-   
+   @media screen and (max-width: 700px) {
+    .sobremi .fila .col {
+        width: 100%;
+        overflow-x: hidden;
+    }
+}
+@media screen and (max-width: 700px) {
+    .contacto .fila .col input, .contacto .fila .col textarea {
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .sobremi, .curriculum, .contacto {
+        padding: 50px 10px;
+    }
+}
     }
