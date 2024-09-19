@@ -130,6 +130,7 @@ html {
 
 
 .sobremi {
+    
     background-color: #000022;
     color: whitesmoke;
     padding: 100px 20px;
@@ -203,10 +204,11 @@ html {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    overflow-x: hidden;
 }
 
 .sobremi .fila .col .contenedor-intereses .intereses {
-    overflow-x: visible;
+    
     width: 100px;
     height: 100px;
     background-color: #001242d4;
