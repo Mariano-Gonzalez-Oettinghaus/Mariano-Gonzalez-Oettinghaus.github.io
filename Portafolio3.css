@@ -441,6 +441,7 @@ p {
       
       .overlay .iconos-contenedor {
         display: flex;
+        justify-content: center;
       }
       
       .overlay i {
@@ -470,6 +471,11 @@ p {
         text-align: center;
         font-family: 'Righteous';
         color: whitesmoke;
+      }
+
+      .bi-laptop {
+    display: flex;
+     justify-content: right;
       }
     
     
@@ -678,4 +684,6 @@ p {
         .contacto .fila .col {
             width: 100%;
         }
+
+   
     }
