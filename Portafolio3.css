@@ -4,7 +4,7 @@
     font-family: 'work sans';
     margin: 0;
     padding: 0;
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
 
 html {
@@ -15,6 +15,7 @@ html {
 
     /* Menú */
 .contenedor-header {
+    overflow-x: visible;
     background: #000022;
     position: fixed;
     width: 100%;
@@ -64,11 +65,11 @@ html {
     border-radius: 5px;
     cursor: pointer;
     display: none;
+  
 }
 
     /* Sección de Inicio*/
 .inicio {
-    overflow-x:visible;
     margin-top: 4.5rem;
     background: linear-gradient(to top, #000022b4, #001242d4), url(./imagenes/Línea\ de\ código.jpg);
     background-size: cover;
@@ -86,7 +87,6 @@ html {
     margin: auto;
     text-align: center;
     border-radius: 40px;
-    overflow-x:visible;
 }
 
 .inicio .contenido-banner img {
@@ -95,7 +95,6 @@ html {
     width: 100%;
     margin: auto;
     border-radius: 100%;
-    overflow-x:visible;
 }
 
 .inicio .contenido-banner h1 {
@@ -121,7 +120,7 @@ html {
     margin: 40px 5px;
     font-size: 20px;
     transition: 1s;
-    overflow-x:visible;
+    overflow: hidden;
 }
 
 .inicio .contenido-banner .redes a:hover {
@@ -270,7 +269,6 @@ p {
 
     /*SECCIÓN DE CURRICULUM*/
     .curriculum {
-        overflow: hidden;
         background-color: #01103a;
         color: whitesmoke;
         padding: 50px 20px;
@@ -398,7 +396,6 @@ p {
 
     #proyectos{
         background-color: #000022;
-        overflow: hidden;
     }
 
     .proyectos-recientes {
@@ -491,7 +488,6 @@ p {
     
     /*SECCION DE CONTACTO*/
     .contacto{
-        overflow: hidden;
         src: url("https://www.google.com/maps/d/u/0/embed?mid=11XAh-2mLgkE9cfMPyC5NxGMtBxqLBjA&ehbc=2E312F" );
         background-color: #01103a;
         color: #fff;
