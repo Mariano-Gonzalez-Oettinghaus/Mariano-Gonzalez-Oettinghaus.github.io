@@ -399,7 +399,7 @@ p {
       
       .proyectos-recientes img {
         height: 16rem;
-        width: 25rem;
+        width: 100%;
         padding: 10px;
         border-radius: 10px;
         display: block;
