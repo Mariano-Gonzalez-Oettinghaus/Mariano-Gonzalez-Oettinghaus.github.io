@@ -273,9 +273,11 @@ html {
     margin-bottom:  3px;
     padding-top: 15px;
 }
-p {
-    color: whitesmoke;
-}
+
+
+.overlay h4, p {
+    color: whitesmoke; /* Cambia el color del texto a blanco */
+  }
 
     /*SECCIÓN DE CURRICULUM*/
     .curriculum {
