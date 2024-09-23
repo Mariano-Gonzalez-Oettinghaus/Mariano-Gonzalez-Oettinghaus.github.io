@@ -70,6 +70,7 @@ html {
 
     /* Sección de Inicio*/
 .inicio {
+    overflow: hidden;
     margin-top: 4.5rem;
     background: linear-gradient(to top, #000022b4, #001242d4), url(./imagenes/Línea\ de\ código.jpg);
     background-size: cover;
@@ -78,8 +79,12 @@ html {
     display: flex;
     align-items: center;
 }    
+.encabezado1{
+    overflow: hidden;
+}
 
 .inicio .contenido-banner {
+    overflow: hidden;
    
     padding: 5px;
     background-color: #01103a;
@@ -90,6 +95,7 @@ html {
 }
 
 .inicio .contenido-banner img {
+    overflow: hidden;
     margin-top: 40px;
     display: block;
     width: 100%;
@@ -125,6 +131,7 @@ html {
 
 .inicio .contenido-banner .redes a:hover {
     background-color: #2ba9d3;
+  
 }
     /* SECCIÓN SOBRE MÍ*/
 
